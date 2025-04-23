@@ -279,3 +279,17 @@ Runtime Error
 [0m23:32:44.886613 [debug] [MainThread]: Command `dbt docs generate` failed at 23:32:44.885615 after 0.26 seconds
 [0m23:32:44.887610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFE7F57670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFECA129D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFECA12CA0>]}
 [0m23:32:44.889605 [debug] [MainThread]: Flushing usage events
+[0m15:04:57.239092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F91669610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F94150A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F941507F0>]}
+
+
+============================== 15:04:57.272915 | aa4a0b82-1f44-40e3-a8a9-591083099872 ==============================
+[0m15:04:57.272915 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:04:57.273921 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Victor\\Documents\\GitHub\\DW_dbt_sql_st', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:57.274941 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Victor\Documents\GitHub\DW_dbt_sql_st\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:04:57.275948 [debug] [MainThread]: Command `dbt seed` failed at 15:04:57.275948 after 0.16 seconds
+[0m15:04:57.277635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F91669610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F941507F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F94150AC0>]}
+[0m15:04:57.277635 [debug] [MainThread]: Flushing usage events
