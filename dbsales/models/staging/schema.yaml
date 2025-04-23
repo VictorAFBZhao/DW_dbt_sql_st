@@ -1,16 +1,23 @@
-
 version: 2
 
-sources:
-  - name: dbsales
-    schema: public
-    tables:
-      - name: commodities
-        description: "Tabela que contem dados historicos de commodities"
-        columns:
-          - name: Date
-            description: "Data da cotacao"
-          - name: Close
-            description: "Preco de fechamento da commodity"
-          - name: simbolo
-            description: "Simbolo da commodity"
+models:
+  - name: stg_commodities
+    description: "Tabela de staging para dados de commodities"
+    columns:
+      - name: data
+        description: "Data da observação no formato AAAA-MM-DD"
+      - name: valor_fechamento
+        description: "Preço de fechamento da commodity com precisão decimal 4.2"
+      - name: simbolo
+        description: "Símbolo da commodity"
+  - name: stg_movimentacao_commodities
+    description: "Tabela de staging para dados de movimentação de commodities"
+    columns:
+      - name: data
+        description: "Data da transação no formato AAAA-MM-DD"
+      - name: simbolo
+        description: "Símbolo da commodity"
+      - name: acao
+        description: "Tipo de transação (buy/sell)"
+      - name: quantidade
+        description: "Quantidade transacionada"
