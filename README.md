@@ -11,7 +11,7 @@ O código-fonte está organizado em dois diretórios principais:
 
 Para executar o projeto, basta executar o comando `python src/extract_load.py` no diretório raiz do projeto. Isso irá extrair os dados do Yahoo Finance, transformá-los e carregá-los no banco de dados PostgreSQL.
 
-
+```mermaid
 graph TD;
     A[Início] --> B[Extrair Dados das Commodities]
     B --> C[Transformar Dados das Commodities]
@@ -39,4 +39,5 @@ graph TD;
     C1 --> C2
     C2 --> D
     D --> D1
-
+    
+```
